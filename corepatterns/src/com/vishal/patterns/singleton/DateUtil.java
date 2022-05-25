@@ -2,7 +2,7 @@ package com.vishal.patterns.singleton;
 
 public class DateUtil {
 
-	private static DateUtil instance;
+	private static volatile DateUtil instance;                  //marked volatile to avoid multithreading issues
 
 //	static {
 //		instance = new DateUtil();
@@ -19,10 +19,11 @@ public class DateUtil {
 //	}
 	
 	public static DateUtil getInstance() {    //added synchronized  blockto make it thread safe
-		
+		if (instance == null) {               // only if instance is null we need to acquire the lock
 		synchronized (DateUtil.class) {
 			if (instance == null)
 				instance = new DateUtil();  //lazy instantiation
+		}
 		}
 		return instance;
 	}
