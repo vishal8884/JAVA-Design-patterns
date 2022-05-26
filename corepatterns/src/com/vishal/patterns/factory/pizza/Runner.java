@@ -7,6 +7,9 @@ public class Runner {
     
 		PizzaStore ps = new PizzaStore();
 		ps.orderPizza("cheese");
+		
+		
+		//we use oracle/mysql/sql server but use only one object to create it same happens behind the scenes
 	}
 
 }
