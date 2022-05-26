@@ -1,4 +1,4 @@
-package com.vishal.patterns.factory;
+package com.vishal.patterns.factory.pizza;
 
 public class PizzaStore {
 
