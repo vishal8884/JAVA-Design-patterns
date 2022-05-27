@@ -1,4 +1,4 @@
-package com.vishal.patterns.flyweight.withAbstractClass;
+package com.vishal.patterns.flyweight.withAbstractClassSavesMemory;
 
 import java.util.HashMap;
 import java.util.Map;

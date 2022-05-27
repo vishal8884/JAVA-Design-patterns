@@ -1,4 +1,4 @@
-package com.vishal.patterns.flyweight.withAbstractClass;
+package com.vishal.patterns.flyweight.withAbstractClassSavesMemory;
 
 public abstract class Shape {
 
@@ -8,5 +8,6 @@ public abstract class Shape {
 	
 	public void draw(int length,int breadth,String fillStyle) {
 		//no - op
+		System.out.println("test");
 	}
 }
