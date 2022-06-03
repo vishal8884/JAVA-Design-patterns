@@ -1,8 +1,8 @@
 package com.vishal.patterns.abstractFactory;
 
-import com.vishal.patterns.abstractFactory.abstractOfAbstractFactory.DBDaoFactory;
-import com.vishal.patterns.abstractFactory.abstractOfAbstractFactory.DaoAbstractFactory;
-import com.vishal.patterns.abstractFactory.abstractOfAbstractFactory.XMLDaoFactory;
+import com.vishal.patterns.abstractFactory.factoryclasses.DBDaoFactory;
+import com.vishal.patterns.abstractFactory.factoryclasses.DaoAbstractFactory;
+import com.vishal.patterns.abstractFactory.factoryclasses.XMLDaoFactory;
 
 public class DaoFactoryProducer {
 

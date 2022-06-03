@@ -1,7 +1,7 @@
 package com.vishal.patterns.abstractFactory;
 
-import com.vishal.patterns.abstractFactory.abstractOfAbstractFactory.DaoAbstractFactory;
 import com.vishal.patterns.abstractFactory.daoImpl.Dao;
+import com.vishal.patterns.abstractFactory.factoryclasses.DaoAbstractFactory;
 
 public class Runner {
 

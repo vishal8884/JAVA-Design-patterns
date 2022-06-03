@@ -1,4 +1,4 @@
-package com.vishal.patterns.abstractFactory.abstractOfAbstractFactory;
+package com.vishal.patterns.abstractFactory.factoryclasses;
 
 import com.vishal.patterns.abstractFactory.daoImpl.Dao;
 
