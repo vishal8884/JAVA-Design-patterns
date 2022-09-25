@@ -7,6 +7,9 @@ public class Runner {
 		WeatherUI weatherUi = new WeatherUI();
 		
 		weatherUi.showTemperature(60000);
+		
+		
+		weatherUi.showTemperature(560043);
 	}
 
 }
