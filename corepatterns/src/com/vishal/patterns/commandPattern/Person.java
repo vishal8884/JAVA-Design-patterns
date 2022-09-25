@@ -8,13 +8,13 @@ public class Person {
 		
 		RemoteControl remoteControl = new RemoteControl();
 		
-		OnCommand onCommand = new OnCommand(television);
+		Command onCommand = new OnCommand(television);
 		
 		remoteControl.setCommand(onCommand);
 		remoteControl.pressButton();
 		
 		
-		OffCommand offComand = new OffCommand(television);
+		Command offComand = new OffCommand(television);
 		
 		remoteControl.setCommand(offComand);
 		remoteControl.pressButton();
