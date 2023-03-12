@@ -1,6 +1,4 @@
-package com.vishal.patterns.assignments.factory.MobileImpl;
-
-import com.vishal.patterns.assignments.factory.Mobile;
+package com.vishal.patterns.assignments.abstractFactory.mobile;
 
 public class SamsungMobile implements Mobile{
 

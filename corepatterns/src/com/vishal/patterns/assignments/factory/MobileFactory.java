@@ -1,8 +1,9 @@
 package com.vishal.patterns.assignments.factory;
 
-import com.vishal.patterns.assignments.factory.MobileImpl.AppleMobile;
-import com.vishal.patterns.assignments.factory.MobileImpl.MotorolaMobile;
-import com.vishal.patterns.assignments.factory.MobileImpl.SamsungMobile;
+import com.vishal.patterns.assignments.factory.Mobile.AppleMobile;
+import com.vishal.patterns.assignments.factory.Mobile.Mobile;
+import com.vishal.patterns.assignments.factory.Mobile.MotorolaMobile;
+import com.vishal.patterns.assignments.factory.Mobile.SamsungMobile;
 
 public class MobileFactory {
 

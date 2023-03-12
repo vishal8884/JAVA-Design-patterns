@@ -1,6 +1,4 @@
-package com.vishal.patterns.assignments.factory.MobileImpl;
-
-import com.vishal.patterns.assignments.factory.Mobile;
+package com.vishal.patterns.assignments.factory.Mobile;
 
 public class AppleMobile implements Mobile{
 
