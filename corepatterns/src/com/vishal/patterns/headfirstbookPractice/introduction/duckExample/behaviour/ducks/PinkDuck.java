@@ -13,6 +13,6 @@ public class PinkDuck extends Duck{
 
     @Override
     public void display() {
-        System.out.println("Display for RedDuck");
+        System.out.println("Display for Pink Duck");
     }
 }

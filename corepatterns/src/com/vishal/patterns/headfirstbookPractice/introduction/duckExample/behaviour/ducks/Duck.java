@@ -25,4 +25,13 @@ public abstract class Duck {
     public void quack(){
         quackingBehavior.quack();
     }
+
+
+    public void setFlyingBehavior(FlyingBehavior flyingBehavior){
+        this.flyingBehavior = flyingBehavior;
+    }
+
+    public void setQuackingBehavior(QuackingBehavior quackingBehavior){
+        this.quackingBehavior = quackingBehavior;
+    }
 }

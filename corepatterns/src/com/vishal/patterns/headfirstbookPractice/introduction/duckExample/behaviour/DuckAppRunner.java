@@ -4,6 +4,8 @@ import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behavi
 import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behaviour.ducks.Duck;
 import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behaviour.ducks.PinkDuck;
 import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behaviour.ducks.RedDuck;
+import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behaviour.fly.CannotFly;
+import com.vishal.patterns.headfirstbookPractice.introduction.duckExample.behaviour.quack.CanQuack;
 
 public class DuckAppRunner {
 
@@ -25,6 +27,8 @@ public class DuckAppRunner {
 
 
         Duck pinkDuck = new PinkDuck();
+        pinkDuck.setFlyingBehavior(new CannotFly());
+        pinkDuck.setQuackingBehavior(new CanQuack());
 
         pinkDuck.display();
         pinkDuck.swim();
