@@ -42,7 +42,15 @@ class PaymentStrategy {
 
 
     public void pay(String amount,String from,String to){
+        amount = applyOffers(amount);
+        //if you observe this is common accross all the implementations if we want to cahnge the offer accross all the types of payment we can do here.
+        //Lets say tomorrow instead of 2 you want to give offer of 5 then you can just come and change here instead of chaing all the implementation
+
         paymentSystem.pay(amount,from,to);
+    }
+
+    public static String applyOffers(String amount){
+        return String.valueOf(Integer.parseInt(amount) + 2);
     }
 }
 
