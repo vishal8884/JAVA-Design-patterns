@@ -1,4 +1,4 @@
-package com.vishal.practice.strategy;
+package com.vishal.practice.behaviour.strategy;
 
 import java.util.Arrays;
 import java.util.List;

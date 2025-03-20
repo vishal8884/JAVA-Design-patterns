@@ -1,4 +1,4 @@
-package com.vishal.practice.observer;
+package com.vishal.practice.behaviour.observer;
 
 import java.util.ArrayList;
 import java.util.List;
