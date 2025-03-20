@@ -76,6 +76,15 @@ class StockObserverB implements Observer{
     }
 }
 
+class StockObserverC implements Observer{
+
+    @Override
+    public void update(String stockName, int price) {
+        System.out.println("Observer C stockName :: "+stockName+"    stockPrice :: "+price);
+    }
+}
+
+
 
 
 public class ObserverStockApp {
@@ -85,10 +94,22 @@ public class ObserverStockApp {
 
         StockObserverA observerA = new StockObserverA();
         StockObserverB observerB = new StockObserverB();
+        StockObserverC observerC = new StockObserverC();
 
         stockMarket.registerObserver(observerA);
         stockMarket.registerObserver(observerB);
+        stockMarket.registerObserver(observerC);
 
         stockMarket.updateStock();
+
+        //exercise 1 = Unsuscribe a user from stocks (not working)
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        stockMarket.removeObserver(observerB);
+
     }
 }
